@@ -21,6 +21,7 @@ app.use(cookieParser());
 // app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/hikes', hike.index);
+app.get('/hikes_and_stuff', hike.index);
 app.post('/add_hike', hike.add_hike);
 
 app.use('/', indexRouter);
